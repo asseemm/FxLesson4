@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="465.0" prefWidth="550.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.regisController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Registration" textFill="#ad99ae">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="60.0" />
+         </VBox.margin>
+      </Label>
+      <TextField opacity="0.5" prefHeight="39.0" prefWidth="300.0" promptText="Enter your name" style="-fx-border-color: ad99ae;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" top="30.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField opacity="0.5" promptText="Enter your surname" style="-fx-border-color: ad99ae;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField opacity="0.5" promptText="Email" style="-fx-border-color: ad99ae;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField opacity="0.5" promptText="Phone number" style="-fx-border-color: ad99ae;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField opacity="0.5" promptText="Group" style="-fx-border-color: ad99ae;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" right="15.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField opacity="0.5" promptText="Classroom" style="-fx-border-color: ad99ae;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="60.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <TextField opacity="0.5" promptText="Password" style="-fx-border-color: ad99ae;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerButtonClicked" style="-fx-background-color: ad99ae;" text="Register" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" top="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="45.0" right="45.0" />
+               </padding>
+            </Button>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonClicked" style="-fx-border-color: ad99ae; -fx-background-color: ad99ae;" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="53.0" right="53.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="80.0" left="25.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
