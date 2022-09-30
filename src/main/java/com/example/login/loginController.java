@@ -44,7 +44,7 @@ public class loginController {
             try{
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("welcome.fxml"));
-                Scene scene = new Scene(fxmlLoader.load(), 550, 700);
+                Scene scene = new Scene(fxmlLoader.load(), 700, 400);
                 Stage stage = new Stage();
                 stage.setTitle("Main");
                 stage.setScene(scene);
